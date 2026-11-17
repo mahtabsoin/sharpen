@@ -4,7 +4,7 @@ A skill that makes your coding agent think harder before it answers, and answer 
 
 Point it at a decision, a plan, a recurring problem, or someone else's claim. You get a verdict, what you're missing, and the one check that would change the call. It runs the 2 or 3 mental models that matter for your situation. It doesn't list all of them.
 
-Works with Claude Code, Codex, Cursor, Gemini CLI, and any agent that supports the [Agent Skills](https://agentskills.io) format.
+Works with Claude Code, Codex, Cursor, Gemini CLI, Muse, Hermes Agent, OpenClaw, and any other coding or personal agent. It follows the [Agent Skills](https://agentskills.io) format and is plain instructions with no scripts, so agents can adapt it to their own setup.
 
 ## Why this exists
 
@@ -107,7 +107,9 @@ git clone https://github.com/mahtabsoin/sharpen /tmp/sharpen
 cp -r /tmp/sharpen/skills/sharpen ~/.agents/skills/
 ```
 
-**Other agents:** copy `skills/sharpen/` into your agent's skills folder. It's one `SKILL.md` file with no scripts or dependencies.
+**Other agents (Muse, Hermes Agent, OpenClaw, and more):** copy `skills/sharpen/` into your agent's skills folder. If your agent has no skills folder, give it the link to `skills/sharpen/SKILL.md` and ask it to follow the file, or paste the file into its instructions. It's one file with no scripts or dependencies.
+
+Agents with native skill support can call sharpen on their own when a situation fits. Others run it when you ask.
 
 ## License
 
